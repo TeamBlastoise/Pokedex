@@ -16,4 +16,10 @@ jobs:
         uses: 'google-github-actions/auth@v0'
         with:
           workload_identity_provider: 'projects/1092496638591/locations/global/workloadIdentityPools/workload-identity-pool/providers/workload-identity-pool-provider'
-          service_account: 'githubactions@pokedex-348721.iam.gserviceaccount.com'          
+          service_account: 'githubactions@pokedex-348721.iam.gserviceaccount.com'
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v0'
+
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
