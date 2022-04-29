@@ -39,5 +39,5 @@ jobs:
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@v0'
         with:
-          workload_identity_provider: 'projects/1092496638591/locations/global/workloadIdentityPools/wip-pokedex/providers/wip-provider-pokedex'
+          workload_identity_provider: 'projects/1092496638591/locations/global/workloadIdentityPools/workload-identity-pool/providers/workload-identity-pool-provider'
           service_account: 'githubactions@pokedex-348721.iam.gserviceaccount.com'          
