@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  pokemon-db:
+    image: docker.io/bitnami/postgresql:14
+    ports:
+      - '6000:5432'
+    volumes:
+      - 'postgresql_data:/bitnami/postgresql'
+    environment:
+      - 'POSTGRESQL_USERNAME=pokemon-db'
+      - 'POSTGRESQL_PASSWORD=pokemon-db'
+      - 'POSTGRESQL_DATABASE=pokemon-db'
+
+volumes:
+  postgresql_data:
+    driver: local

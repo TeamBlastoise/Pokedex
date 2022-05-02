@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:6000/pokemon-db
+    username: pokemon-db
+    password: pokemon-db
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    clean-on-validation-error: true

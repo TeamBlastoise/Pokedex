@@ -1,1 +1,5 @@
 rootProject.name = 'pokedex'
+
+include ':pokemon-populator'
+include ':pokemon-microservice'
+include ':libraries:pokeapi-wrapper'
