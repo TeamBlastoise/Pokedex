@@ -2,7 +2,7 @@ version: '2'
 
 services:
   pokemon-db:
-    image: docker.io/bitnami/postgresql:14
+    image: docker.io/bitnami/postgresql:16
     ports:
       - '6000:5432'
     volumes:
